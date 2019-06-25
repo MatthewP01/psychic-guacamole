@@ -1,0 +1,14 @@
+<h2><%= @rider.name %>'s Rollercoasters:</h2>
+
+<ul>
+  <% @rider.rollercoasters.each do |rollie| %>
+  <li><%= rollie.name %></li>
+  <% end %>
+</ul>
+
+<b><%= button_to "Click here to edit this rider", edit_rider_path(@rider) %></b>
+
+<br><p><%= form_tag("/riders/#{@rider.id}", method: "DELETE") do %>
+<%= submit_tag "DELETE THIS RIDER :(" %>
+<% end %>
+</p></br>

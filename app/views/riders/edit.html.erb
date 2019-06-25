@@ -1,0 +1,11 @@
+<%= form_for @rider do |f| %>
+  <div>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  </div>
+  <div>
+  <%= f.label :rollercoaster_id %>
+  <%= f.collection_check_boxes :rollercoaster_ids, @rollercoasters, :id, :name %>
+  </div>
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,3 @@
+class RiderRollercoastersController < ApplicationController
+
+end

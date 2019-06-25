@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :riders
   # NEW
   get 'rollercoasters/new', to: "rollercoasters#new", as: "new_rollercoaster"
   # INDEX
@@ -10,5 +11,5 @@ Rails.application.routes.draw do
   get '/rollercoasters/:id/edit', to: "rollercoasters#edit"
   # UPDATE
   patch '/rollercoasters/:id', to: "rollercoasters#update", as: "rollercoaster"
-  
+
 end

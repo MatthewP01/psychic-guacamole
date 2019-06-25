@@ -36,7 +36,7 @@ class RollercoastersController < ApplicationController
     redirect_to "/rollercoasters"
   end
 
-  private 
+  private
   # STRONG PARAMS
   # MUST HAVE THIS METHOD
   def rollercoaster_params

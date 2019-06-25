@@ -1,0 +1,5 @@
+<ul>
+<% @riders.each do |roll| %>
+  <li><%= link_to roll.name, rider_path(roll) %></li>
+<% end %>
+</ul>
